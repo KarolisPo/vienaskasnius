@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Bebas Neue;
+    margin: 0;
+    text-align: center;
+    color: white;
+    background: #181818;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  a {
+      text-decoration: none;
+  }
+
+
+
+  /* MENIU.HTML STYLE */
+  
+.meniu-wraper-mobile, .image-mobile-wrap, .mobile-image, 
+.aprasymas-mobile{
+  display: none;
+}
+
+.meniu-wraper-top{
+    margin-top: 25px;
+    display: block;
+    position: relative;
+    width: 85%;
+    height: 300px;
+    margin: 40px auto;
+  }
+  
+
+  .image-wrap-top {
+    position: absolute;
+    width: 60%;
+    height: 300px;
+  }
+
+  .image-top{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .aprasymas-top{
+    position: absolute;
+    display: inline-block;
+    bottom: 0px;
+    height: 300px;
+    width: 40%;
+    right: 0;
+  }
+  
+  .aprasymas-top p {
+    position: relative;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-family: Montserrat;
+    height: 300px;
+    width: 100%;
+    float: left;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  .meniu-wraper-bot{
+    margin-top: 25px;
+    display: block;
+    position: relative;
+    width: 85%;
+    height: 300px;
+    margin: 40px auto;
+  }
+  
+
+  .image-wrap-bot {
+    position: absolute;
+    width: 60%;
+    height: 300px;
+    left: 40%;
+  }
+
+  .image-bot{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .aprasymas-bot{
+    position: absolute;
+    display: inline-block;
+    height: 300px;
+    width: 40%;
+    left: 0;
+  }
+  
+  .aprasymas-bot p {
+    position: absolute;
+    text-align: left;
+    font-family: Montserrat;
+    height: 300px;
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .meniu-pavadinimas {
+    position: relative;
+    font-size: 35px;
+    font-family: Bebas Neue;
+    left: 0;
+  }
+
+  .meniu-pavadinimas-stand {
+    position: absolute;
+    font-size: 35px;
+    font-family: Bebas Neue;
+    left: 15px;
+  }
+
+  .line-wrap {
+    position: relative;
+    height: 40px;
+  }
+  .option {
+    position: absolute;
+    font-family: Montserrat;
+    text-align: left;
+    left: 15px;
+    font-size: 20px;
+  } 
+
+  .kaina {
+    position: absolute;
+    margin-right: 30px;
+    font-family: Bebas Neue;
+    font-size: 22px;
+    right: 0;
+    text-align: right;
+  }
+
+
+  .sudetis {
+    font-family: Bebas Neue;
+    font-size: 30px;
+  }
+  
+
+  /* image modal */ 
+  .hide-modal {
+    display: none;
+  }
+  
+  .modal {
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    overflow: scroll;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  
+  .modal-content {
+    width: 50%;
+    font-size: 20px;
+    position: relative;
+    top: 15%; 
+    bottom: 10%;
+
+  }
+  
+  .close-modal {
+    position: absolute;
+    right: 2%;
+    margin-top: 2%;
+    cursor: pointer;
+    font-size: 60px;
+  }
+
+  .close-modal:hover {
+      color: #DE6A41;
+  }
+
+  .image {
+    cursor: pointer;
+  }
+  /* RESPONSIVE */
+  @media screen and (max-width: 1050px) {
+    
+    .modal-content {
+      width: 60%;
+      left: 0;
+    }
+
+    .meniu-wraper-top, .meniu-wraper-bot{
+      display: block;
+      position: relative;
+      width: 90%;
+      height: 250px;
+      margin: 40px auto;
+    }
+    
+  
+    .image-wrap-top, .image-wrap-bot {
+      height: 250px;
+    }
+  
+    .image-top, .image-bot{
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+  
+    .aprasymas-top, .aprasymas-bot{
+      position: absolute;
+      display: inline-block;
+      bottom: 0px;
+      height: 250px;
+    }
+    
+    .aprasymas-top p, .aprasymas-bot p {
+      position: relative;
+      text-align: left;
+      margin-bottom: 10px;
+      font-family: Montserrat;
+      height: 250px;
+      width: 100%;
+      float: left;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+    
+    .meniu-pavadinimas {
+      font-size: 21px;
+      font-family: Bebas Neue;
+    }
+  
+    .kaina {
+      margin-right: 30px;
+      font-family: Bebas Neue;
+      font-size: 14px;
+      float: right;
+      text-align: right;
+    }
+  
+    .sudetis {
+      font-family: Bebas Neue;
+      font-size: 18px;
+    }
+
+  
+  }
+
+  .uzsakyti-btn-wrap{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 50px;
+}
+.uzsakyti-btn {
+    font-family: Bebas Neue;
+    font-size: 30px;
+    font-weight: 400;
+    height: 80px;
+    width: 350px;
+    background: #181818;
+    border: 3px solid #DE6A41;
+    border-radius: 10px;
+    color: #DE6A41;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .uzsakyti-btn:hover{
+      background-color: #DE6A41;
+      border-color:#181818 ;
+      color: #181818;
+      transition-duration: 0.3s;
+  }
+  
+  @media screen and (max-width: 669px) {
+    
+    .modal-content {
+      width: 90%;
+      left: 0;
+    }
+    
+    .meniu-wraper-top, .meniu-wraper-bot{
+      display: block;
+      width: 90%;
+      height: 325px;
+      position: relative;
+      margin: 40px auto;
+
+    }
+
+    .image-wrap-top, .image-wrap-bot {
+      position: absolute;
+      width: 100%;
+      height: 150px;
+      left: 0;
+      margin-left: 0;
+    }
+
+    .image-top, .image-bot{
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+
+    }
+
+    .aprasymas-top, .aprasymas-bot{
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 175px;
+    }
+    
+    .aprasymas-top p, .aprasymas-bot p {
+      position: relative;
+      text-align: left;
+      font-family: Montserrat;
+      height: 175px;
+      width: 100%;
+      float: left;
+      font-size: 14px;
+      margin-top: 10px;
+      margin-left: 0;
+
+    }
+
+    .meniu-pavadinimas {
+      font-size: 21px;
+      font-family: Bebas Neue;
+    }
+
+    .kaina {
+      margin-right: 10px;
+      font-family: Bebas Neue;
+      font-size: 13px;
+    }
+
+    .sudetis {
+      font-family: Bebas Neue;
+      font-size: 18px;
+    }
+  }

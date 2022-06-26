@@ -1,0 +1,156 @@
+.footer {
+  position: relative;
+  width: 100%;
+  bottom: 0px;
+
+  background-color: #181818;
+  z-index: 1;
+}
+
+.left-footer-box {
+    position: relative;
+    display: inline-block;
+    width:30%;
+    height: 150px;
+
+}
+
+.center-footer-box {
+  position: relative;
+  display: inline-block;
+  width: 10%;
+  height: 150px;
+  margin-bottom: 15px;
+}
+
+.right-footer-box {
+  position: relative;
+  display: inline-block;
+  width: 59%;
+  height: 150px;
+}
+
+.footer-logo {
+  position: absolute;
+  width: 200px;
+  left: 70%;
+  top: 25%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+}
+
+.contact-wrap {
+  position: absolute;
+  text-align: left;
+  font-family: Bebas Neue;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50%;
+  margin-left: 50%;
+}
+
+.adress-wrap{
+  position: absolute;
+  text-align: left;
+  font-family: Bebas Neue;
+}
+
+.adress-wrap-left {
+  display: none;
+}
+
+.map-wrap {
+  position: absolute;
+  top: 80px;
+  width: 90%;
+}
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.contact-icon-kontaktai {
+  cursor: pointer;
+  margin-right: 5px;
+}
+.contact-link{
+  font-size: 18px;
+}
+
+.contact-link:hover {
+  color: #DE6A41;
+}
+
+.horizontal-line {
+  border: 1px solid #DE6A41;
+}
+
+@media screen and (max-width: 690px) {
+
+  .footer {
+    position: relative;
+    width: 100%;
+      height: auto;
+  }
+  .left-footer-box, .center-footer-box, .right-footer-box {
+      display: block;
+      width: 100%;
+  }
+
+  .left-footer-box {
+      height: 100px;
+      margin-bottom: 0;
+  }
+
+  .footer-logo{
+      position: absolute;
+      left: 50%;
+      width: 200px;
+  }
+
+  .center-footer-box{
+      height: 0px;
+  }
+
+  .contact-wrap{
+    position: absolute;
+      width: 100%;
+      text-align: center;
+      margin-left: 0;
+      top: 50px;
+
+  }
+
+  .contact-wrap p {
+    width: 50%;
+    text-align: left;
+    margin-left: 50%;
+    transform: translateX(-35%);
+  }
+  .center-footer-box {
+    visibility: hidden;
+  }
+
+
+  .right-footer-box{
+      margin: 0;
+      height: 120px;
+
+  }
+
+  .adress-wrap-left {
+      display: inline-block;
+  }
+
+  .adress-wrap{
+      display: none;
+  }
+
+  .map-wrap{
+      top: 80px;
+      margin-left: 5%;
+  }
+
+}

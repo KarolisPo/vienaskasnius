@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Bebas Neue;
+    margin: 0;
+    text-align: center;
+    color: white;
+    background: #181818;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  a {
+      text-decoration: none;
+  }
+
+
+  /* GALLERY */ 
+
+  .left-img-wraper {
+    display: inline-block;
+    width: 27%;
+    height: 250px;
+    margin: 0.5% 0.5% 0.5% 5%;
+  }
+
+  .left-img-wraper-bot {
+    display: inline-block;
+    width: 58%;
+    height: 250px;
+
+    margin: 0.5% 0.5% 0.5% 5%;
+  }
+  
+  .left-img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+  }
+
+  .right-img-wraper {
+    display: inline-block;
+    width: 58%;
+    height: 250px;
+    margin: 0.5% 5% 0.5% 0.5%;
+  }
+
+  .right-img-wraper-bot {
+    display: inline-block;
+    width: 27%;
+    height: 250px;
+    margin: 0.5% 5% 0.5% 0.5%;
+  }
+
+  .right-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.left-img, .right-img {
+    cursor: pointer;
+}
+
+/* ZOOM MODAL */ 
+
+.hide-modal {
+    display: none;
+  }
+  
+  .modal {
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    overflow: scroll;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  
+  .modal-content {
+    width: 45%;
+    font-size: 20px;
+    position: relative;
+    left: 27.5%;
+    top: 10%; 
+
+
+  }
+  
+  .close-modal {
+    position: absolute;
+    right: 2%;
+    margin-top: 2%;
+    cursor: pointer;
+    font-size: 60px;
+  }
+
+  .close-modal:hover {
+      color: #DE6A41;
+  }
+
+  .uzsakyti-btn-wrap{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 50px;
+}
+.uzsakyti-btn {
+    font-family: Bebas Neue;
+    font-size: 30px;
+    font-weight: 400;
+    height: 80px;
+    width: 350px;
+    background: #181818;
+    border: 3px solid #DE6A41;
+    border-radius: 10px;
+    color: #DE6A41;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .uzsakyti-btn:hover{
+      background-color: #DE6A41;
+      border-color:#181818 ;
+      color: #181818;
+      transition-duration: 0.3s;
+  }
+  
+  @media screen and (max-width: 1050px) {
+
+    .modal-content {
+        top: 20%;
+        width: 60%;
+        left: 20%;
+      }
+
+  }
+
+  @media screen and (max-width: 756px) {
+
+    
+    .modal-content {
+        width: 70%;
+        left: 15%;
+        top: 20%;
+      }
+
+  }
+
+  @media screen and (max-width: 580px) {
+  
+    .modal-content {
+      width: 75%;
+      left: 12.5%;
+      top: 20%;
+    }
+  
+  }

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style/navbar.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/galerija.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/x-icon" href="images/logo_tray.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Vieno kąsnio sumuštiniai</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="nav-logo"><img class="nav-logo-img"src="images/logo_baltas.png"></a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="meniu.html" class="nav-link">MENIU</a>
+                </li>
+                <li class="nav-item">
+                    <a href="galerija.html" class="nav-link">GALERIJA</a>
+                </li>
+                <li class="nav-item">
+                    <a href="kontaktai.html" class="nav-link">KONTAKTAI</a>
+                </li>
+                <li class="nav-item">
+                    <a href="uzsakymas.php" class="nav-link" style="color: #DE6A41;">UŽSAKYTI</a>
+                </li>
+            </ul>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+</header>
+
+<h1 style="margin-top: 25px; margin-bottom: 25px; text-decoration: underline; font-size: 45px;">GALERIJA</h1>
+
+<div class="gallery-wraper">
+
+    <div class="left-img-wraper">
+        <img class="left-img image" src="images/70vnt.jpg" alt="Užkandžių padėklas">
+    </div>
+    <div class="right-img-wraper">
+        <img class="right-img image" src="images/burgeriukai.jpg" alt="Mini burgeriai">
+    </div>
+
+    <div class="left-img-wraper-bot">
+        <img class="left-img image" src="images/alausvyno.jpg" alt="Užkandis prie alaus">
+    </div>
+    <div class="right-img-wraper-bot">
+        <img class="right-img image" src="images/minisolotos.jpg" alt="Mini salotų užkandis">
+    </div>
+
+</div>
+<div class="gallery-wraper">
+
+    <div class="left-img-wraper">
+        <img class="left-img image" src="images/minisuikrais.jpg" alt="Mini užkandžių padėklas">
+    </div>
+    <div class="right-img-wraper">
+        <img class="right-img image" src="images/minisukrevetem.jpg" alt="Mini užkandžių padėklas">
+    </div>
+
+    <div class="left-img-wraper-bot">
+        <img class="left-img image" src="images/kruasanai.jpg" alt="kruasanai">
+    </div>
+    <div class="right-img-wraper-bot">
+        <img class="right-img image" src="images/gardi.jpg" alt="Vieno kąsnio užkandis">
+    </div>
+
+</div>
+<div class="gallery-wraper">
+
+    <div class="left-img-wraper">
+        <img class="left-img image" src="images/rankyte.jpeg" alt="Vienaskasnius">
+    </div>
+    <div class="right-img-wraper">
+        <img class="right-img image" src="images/vaikiskas.jpg" alt="Padėklas vaikams">
+    </div>
+
+    <div class="left-img-wraper-bot">
+        <img class="left-img image" src="images/vegan.jpg" alt="Veganiškas užkandžių padėkas">
+    </div>
+    <div class="right-img-wraper-bot">
+        <img class="right-img image" src="images/burgai.jpg" alt="Gardūs mini burgeriai">
+    </div>
+
+</div>
+
+
+<br>
+    <div class="modal hide-modal">
+        <div class="modal-content">
+            <p> <span class="close-modal">&times;</span></p>
+        </div>
+    </div>
+
+    <div class="uzsakyti-btn-wrap">
+        <form action="uzsakymas.php">
+            <button class="uzsakyti-btn">UŽSAKYTI</button>
+        </form>
+    </div>
+
+<hr class="horizontal-line">
+
+<div class="footer" id="footer">
+    <div class="left-footer-box">
+        <img class="footer-logo" src="images/logo_baltas.png" alt="Vieno kąsnio užkandžiai">
+    </div>
+    <div class="center-footer-box">
+    </div>
+    <div class="right-footer-box">
+
+      <div class="contact-wrap">
+        <p>
+            <span style="font-size: 16px;"><img class="contact-icon-kontaktai" src="images/phone.png" alt="Skambinti Vienaskasnius"> <a href="tel:+37061621663" class="contact-link">+37061621663</a></span> <br>
+            <span style="font-size: 16px;"><img class="contact-icon-kontaktai" src="images/mail.png" alt="Email Vienaskasnius"> <a href="mailto:info@vienaskasnius.lt" class="contact-link">info@vienaskasnius.lt</a></span> <br>
+            <span style="font-size: 16px;"><img class="contact-icon-kontaktai" src="images/facebook.png" alt="Facebook Vienaskasnius"> <a href="https://www.facebook.com/Vienaskasnius/" class="contact-link">/VIENASKASNIUS</a></span> <br>
+            <span style="font-size: 16px;"><img class="contact-icon-kontaktai" src="images/insta.png" alt="Instagram Vienaskasnius"> <a href="https://www.instagram.com/vienaskasnius/" class="contact-link">@VIENASKASNIUS</a></span> <br>
+          </p>
+    </div>
+    </div>
+</div>
+
+<script src="script/index.js"></script>
+<script src="script/galerija.js"></script>
+</body>
+</html>

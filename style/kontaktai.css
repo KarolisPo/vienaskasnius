@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Bebas Neue;
+    margin: 0;
+    text-align: center;
+    color: white;
+    background: #181818;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  a {
+      text-decoration: none;
+  }
+
+  
+  /* Zemelapis */
+iframe{
+  position: absolute;
+  width: 100%;
+  left:0;
+}
+
+.wrap {
+  margin-top: 80px;
+  margin-bottom: 20px;
+  position: relative;
+  width: 90%;
+
+  margin-left: 5%;
+}
+.inline{
+  position: relative;
+  display: inline-block;
+  width: 48%;
+  height: 550px;
+ }
+
+ .inline p {
+  
+   position: absolute;
+   text-align: left;
+   font-size: 35px;
+   width: 100%;
+   margin-top: 150px;
+   right: 0;
+ }
+
+ .contact-icon{
+  width: 25px;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-left: 35%;
+ }
+
+ .contacts:hover {
+   color: #DE6A41;
+ }
+
+ /* RESPONSIVE */
+ @media screen and (max-width: 1350px){  
+   
+
+
+.contact-icon-kontaktai{
+height: 20px;
+margin-right: 10px;
+margin-top: 5px;
+margin-left: 20%;
+}
+
+.inline p {
+  font-size: 25px;
+}
+
+ }
+
+ @media screen and (max-width: 845px){
+
+  .inline p {
+    font-size: 19px;
+  }
+  .contact-icon-kontaktai{
+    margin-left:5%;
+    
+  
+ }
+}
+
+ @media screen and (max-width: 690px){
+
+  .wrap {
+    margin-top: 40px;
+  }
+  .inline {
+    display: block;
+    width: 100%;
+  }
+
+  .inline p {
+    margin-top: 0;
+  }
+
+  .contact-icon-kontaktai{
+    margin-left: 0;
+  }
+
+  .top {
+    height: 150px;
+  }
+  
+  .contact-icon-kontaktai{
+  height: 20px;
+  margin-right: 10px;
+  margin-top: 5px;
+  }
+}
